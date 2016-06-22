@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	
-</head>
-<body>
+<div>
+{% extends "browse.html" %}
+{% block racesection %}
 	{% for race in races %}
-	<div><h3>
+	<h3>
 		{{race.raceName}}
-	</h3></div>
+	</h3>
 	{% endfor %}
-</body>
-</html>
+{% endblock %}
+</div>
